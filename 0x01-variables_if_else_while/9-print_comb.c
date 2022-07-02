@@ -1,7 +1,4 @@
 #include <stdio.h>
-
-
-
 /*
 * main - prints numbers
 *
@@ -16,6 +13,7 @@ int main(void)
 	while (i <= '9')
 	{
 	putchar(i);
+
 	if (i != '9')
 	{
 	putchar(',');
