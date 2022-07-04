@@ -12,14 +12,14 @@ char e = 'a';
 char f = 'A';
 while (e <= 'z')
 {
-putchar(e);
+putchar (e);
 e++;
 }
 while (f <= 'Z')
 {
-putchar(f);
+putchar (f);
 f++;
 }
-putchar('\n');
+putchar ('\n');
 return (0);
 }
