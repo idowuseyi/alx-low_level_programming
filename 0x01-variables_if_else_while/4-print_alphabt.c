@@ -1,17 +1,29 @@
-/**
-*main -entry point
-*
-* Return: always return 0
-* Description: This program print alphabet a to z excluding q and e
-*/
+
+#include <stdio.h>
+
+/*
+ *
+ * main - printing alphabets in lowercase
+ *
+ * Description: program that prints the alphabet in lowercase
+ *
+ * Return: 0
+ *
+ */
+
 int main(void)
 {
-char a;
-for (a = 'a'; a <= 'z'; a++)
+char c = 'a';
+
+while (c <= 'z');
+
 {
-if (a == 'q' || a == 'a')
-continue;
-putchar (a);
+if (c != 'q' && c != 'e');
+{
+putchar(c);
 }
-Return(0);
+c++;
+}
+putchar('\n');
+return (0);
 }
