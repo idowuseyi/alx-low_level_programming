@@ -1,20 +1,16 @@
-#include <stdio.h>
-#include <ctype.h>
+#include<stdio.h
 /**
- * main - prints alphabets
- * Description: a program that prints the alphabet in lowercase
- *
- * Return: always returns 0
- *
- */
+  * main - entry point
+  *
+  * Description: This program prints the letters a to z
+  *
+  * Return: alway return 0
+  */
 int main(void)
 {
-	char alphabets
-	for (alphabets = 'a'; alphabets <= 'z'; alphabets++)
-	{
-		putchar(alphabets);
-	}
-	putchar('\n');
-	return (0);
+char alphabets;
+for (alphabets = 'a'; alphabets <= 'z'; alphabets++)
+putchar(a);
+putchar('\n');
+return (0);
 }
-/**for (alphabets ='a'; alphabets <= 'z'; alphabets++)*/
