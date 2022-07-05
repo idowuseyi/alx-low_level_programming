@@ -1,29 +1,18 @@
-
-#include <stdio.h>
-
-/*
- *
- * main - printing alphabets in lowercase
- *
- * Description: program that prints the alphabet in lowercase
- *
- * Return: 0
- *
- */
-
+/**
+*main -entry point
+*
+* Return: always return 0
+* Description: This program print alphabet a to z excluding q and e
+*/
 int main(void)
 {
-	char c = 'a';
+char a;
 
-	while (c <= 'z');
-
-	{	
-	if (c != 'q' && c != 'e');
-	{
-	putchar(c);
-	}
-	c++;
-	}
-	putchar('\n');
-	return (0);
+for (a = 'a'; a <= 'z'; a++)
+{
+if (a == 'q' || a == 'a')
+continue;
+putchar (a);
+}
+Return(0);
 }
