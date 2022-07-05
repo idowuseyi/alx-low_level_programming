@@ -1,17 +1,17 @@
 #include <stdio.h>
-/*
- *
- * main - prints numbers
- *
- * Description: "prints all the numbers of base 16 in lowercase"
- *
- * Return: 0
- *
- */
+/**
+* main - Entry point
+*
+* Description: "prints all the numbers of base 16 in lowercase"
+*
+* Return: always return 0 (success)
+*
+*/
 
 int main(void)
 {
 	int i = '0';
+
 	while (i <= '9')
 	{
 	putchar(i);
