@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
 * printsm - print "something"
 *
