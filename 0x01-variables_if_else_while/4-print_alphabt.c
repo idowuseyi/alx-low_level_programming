@@ -14,7 +14,7 @@ for (a = 'a'; a <= 'z'; a++)
 if (a == 'q' || a == 'a')
 continue;
 }
-putchar (a);
+putchar(a);
 }
 return (0);
 }
