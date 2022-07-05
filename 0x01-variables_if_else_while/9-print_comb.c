@@ -1,15 +1,15 @@
 #include <stdio.h>
-/*
-* main - prints numbers
+/**
+* main - Entry point
 *
 * Description: prints all possible combinations of single-digit numbers
 * Return: 0
-*
 */
 
 int main(void)
 {
 	int i = '0';
+
 	while (i <= '9')
 	{
 	putchar(i);

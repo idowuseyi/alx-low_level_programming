@@ -1,17 +1,15 @@
 #include <stdio.h>
-
-/*
-* main - prints combinations 
+/**
+* main - Entry point
 * Description: prints all possible different combinations of two digits
-* Return: 0
-*
+* Return: Always return 0 (success)
 */
 
 int main(void)
-
 {
 	int a = '0';
 	int b = '9';
+
 	while (a <= '9')
 	{
 	while (b <= '9')
