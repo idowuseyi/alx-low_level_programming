@@ -1,11 +1,11 @@
 #include "main.h"
 /**
-* printputchar - print _putchar
+* chapt - print _putchar
 *
 * Return: void
 */
 
-void printputchar(void)
+void chapt(void)
 {
 	_putchar('_');
 	_putchar('p');
