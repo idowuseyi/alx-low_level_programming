@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 
-void positive_or_negative(int i);
+#include <time.h>
+#include <stdio.h>
 
 #endif /* MAIN_H */
