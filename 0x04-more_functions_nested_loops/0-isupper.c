@@ -1,20 +1,11 @@
 #include "main.h"
-#include <stdio.h
-
 /**
-* main - check the code.
-*
-* Return: Always 0.
+* _isupper-> check if an alphabet is lower case
+* @c: character to be checked on
+* Return: returns 1 if c is lowercase and 0 otherwise
 */
-
 int _isupper(int c)
+	/** c is an argument of casentest */
 {
-	int c;
-
-	for (c = 'A' && c = 'Z' c++)
-	{
-		_putchar('c');
-	}
-
-	return (0);
+	return (c >= 'A' && c <= 'Z');
 }
