@@ -1,9 +1,11 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <stdio.h>
 
-#include <time.h>
+
+void positive_or_negative(int i);
+int largest_number(int a, int b ,int c);
+
 #include <stdio.h>
 
 #endif /* MAIN_H */
