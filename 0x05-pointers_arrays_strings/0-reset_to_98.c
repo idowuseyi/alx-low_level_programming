@@ -4,7 +4,7 @@
 *@p: is the variable to be used
 * Return: return *p
 */
-int reset_to_98(int *p)
+void reset_to_98(int *p)
 {
 	*p = 98;
 
