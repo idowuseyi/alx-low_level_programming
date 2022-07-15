@@ -1,13 +1,14 @@
 #include "main.h"
+
 /**
-* cap_string -> function that capitalizes all words of a string.
-* @x: the string array
-* Return: a string
-*/
+* cap_string -> capitalization function
+* @x: string param
+* Return: capitalized version of the strin
+ */
 char *cap_string(char *x)
 {
-	char spc[] = {32, 9, '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}' };
-	int len = 13;
+	char spc[] = {32, 9, '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+	int len = 13; /* int len is the length of char spc, which is int cspc */
 	int a = 0, i;
 
 	while (x[a])
@@ -16,14 +17,10 @@ char *cap_string(char *x)
 		while (i < len)
 		{
 			if ((a == 0 || x[a - 1] == spc[i]) && (x[a] >= 97 && x[a] <= 122))
-			{
 				x[a] = x[a] - 32;
-				i++;
-			}
-
+			i++;
 		}
 		a++;
-
 	}
 	return (x);
 }
