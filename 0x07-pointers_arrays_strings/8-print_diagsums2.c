@@ -1,5 +1,6 @@
-#include "main.h"
+nclude "main.h"
 #include <stdio.h>
+
 /**
   * print_diagsums - prints the sum of the two diagonals of a
   * square matrix of integers.
@@ -15,9 +16,9 @@ void print_diagsums(int *a, int size)
 
 	for (i = 0; i < total; i += size)
 	{
-	row = i / size;
-	firstDiagonalSum += a[i + row];
-	secondDiagonalSum += a[i + size - row - 1];
+		row = i / size;
+		firstDiagonalSum += a[i + row];
+		secondDiagonalSum += a[i + size - row - 1];
 	}
 
 	printf("%d, %d\n", firstDiagonalSum, secondDiagonalSum);
