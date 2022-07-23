@@ -9,9 +9,9 @@
 */
 int main(int argc, char *argv[])
 {
-	do{
+	do {
 		printf("%s\n", argv[0]);
-	}while (argc > 1);
+	} while (argc > 1);
 	argc -= argc;
 
 	return (0);
