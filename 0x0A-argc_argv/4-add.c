@@ -8,28 +8,25 @@
 int main(int argc, char *argv[])
 {
 	int i;
-	int sum;
+	int sum = 0;
+	char a[10] = {'%', '&', '!', '#', '$', '/', '=', '>', 'e'};
 
-	if (argc < 2)
-	{
-		printf("0\n");
-		return (0);
-	}
-	else
+	if (argc > 1)
 	{
 		for (i = 0; i < argc; i++)
 		{
-			if ((argv[i])!<= 2147483647 && argv[i] !>= -2147483648)
+			if (atoi(argv[i]) == a[10])
+
 			{
 				printf("Error\n");
-					return (1);
+				return (1);
 			}
 			else
 			{
-				sum += atoi(argv[i]);
+			sum += atoi(argv[i]);
 			}
-			printf("%d\n", sum);
 		}
 	}
-	return (sum);
+	printf("%d\n", sum);
+	return(0);
 }
