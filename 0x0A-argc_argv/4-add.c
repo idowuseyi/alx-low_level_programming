@@ -1,32 +1,38 @@
-#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
-  * main - print addition of arguments passed into it
+  * main - adds positive numbers.
   * @argc: argument count
-  * @argv: string array of arguments
-  * Return: add the arguments passed it
+  * @argv: arguments
+  *
+  * Return: 0
   */
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	int i;
-	int sum = 0;
-	char a[10] = {'%', '&', '!', '#', '$', '/', '=', '>', 'e'};
+	int i, n, sum = 0;
+	char *flag;
 
-	if (argc > 1)
+	if (argc < 2)
 	{
-		for (i = 0; i < argc; i++)
-		{
-			if (atoi(argv[i]) == a[10])
+		printf("0\n");
+		return (0);
+	}
 
-			{
-				printf("Error\n");
-				return (1);
-			}
-			else
-			{
-			sum += atoi(argv[i]);
-			}
+	for (i = 1; argv[i]; i++)
+	{
+		n = strtol(argv[i], &flag, 10);
+		if (*flag)
+		{
+			printf("Error\n");
+			return (1);
+		}
+		else
+		{
+			sum += n;
 		}
 	}
 	printf("%d\n", sum);
+
 	return (0);
 }
