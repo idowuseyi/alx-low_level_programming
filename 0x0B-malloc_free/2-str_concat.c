@@ -1,4 +1,7 @@
 #include "main.h"
+#include <stdlib.h>
+#include <stddef.h>
+
 /**
 * str_concat-> concatenate tring
 * @s1: first string parameter

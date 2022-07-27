@@ -1,4 +1,7 @@
 #include "main.h"
+#include <stdlib.h>
+#include <stddef.h>
+
 /**
   * _strdup -> returns a pointer to a copy of the given steing
   * @str: string parameter

@@ -1,4 +1,7 @@
 #include "main.h"
+#include <stdlib.h>
+#include <stddef.h>
+
 /**
 * free_grid -> function that free memory soace
 * @grid: allocated memory parameter
