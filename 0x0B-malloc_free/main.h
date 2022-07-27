@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stddef.h>
 
 char **strtow(char *str);
 char *argstostr(int ac, char **av);
