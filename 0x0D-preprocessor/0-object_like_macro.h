@@ -1,3 +1,1 @@
-#ifndef
-#define SIZE 1024
-#endif
+#define BUFFER_SIZE 1024
