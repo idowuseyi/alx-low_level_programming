@@ -6,12 +6,12 @@
 */
 void print_dog(struct dog *d)
 {
-	if (d != NULL)
+/**	if (d != NULL)
 	{
 	d->name = name;
 	d->age = age;
 	d->owner = owner;
-	}
+	}*/
 	if (name == NULL)
 	{
 	printf("(nil)");
