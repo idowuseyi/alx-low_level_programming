@@ -1,39 +1,13 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
-
+#include "lists.h"
 /**
  * main - check the code
  *
  * Return: Always 0.
  */
 
-struct node {
-	char *str;
-	unsigned int len;
-	struct node *next;
-};
-typedef struct node list_t;
-size_t print_list(const list_t *h)
-{
-	unsigned int count = 0;
-	while (h != NULL)
-	{
-		if (h->str == NULL)
-		{
-			printf("[0] (nil)");
-		}
-		else
-		{
-		printf("[%d] ", h->len);
-		printf("%s", h->str);
-		}
-		h = h->next;
-		count++;
-		printf("\n");
-	}
-	return (count);
-}
 int main(void)
 {
     list_t *head;
