@@ -18,6 +18,11 @@ typedef struct listint_s
 	struct listint_s *next;
 } listint_t;
 
+int is_visited(const listint_t *node, const listint_t **visited, int count);
+
+
+int is_visited2(listint_t *node, listint_t **visited, int count);
+
 size_t print_listint(const listint_t *h);
 size_t listint_len(const listint_t *h);
 listint_t *add_nodeint(listint_t **head, const int n);
