@@ -1,22 +1,23 @@
 #include "main.h"
+
 /**
-* binary_to_uint -> convert binary to decimal
-* @b: the input char
-* Return: converted unsigned int value
-*/
+ * binary_to_uint - converts a binary to int
+ * @b: pointer to binary chars
+ * Return: int value or zero
+ */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int val = 0;
-	int i = 0;
+	unsigned int res = 0, i = 0;
 
-	if (b == NULL)
-	return (0);
-
-	while (b[i] == '0' || b[i] == '1')
+	if (!b)
+		return (0);
+	for (; b[i]; i++)
 	{
-	val <<= 1;
-	val += b[i] - '0';
-	i++;
+		if (b[i] < '0' || b[i] > '1')
+			return (0);
+		res = res << 1;
+		res |= (b[i] - '0');
 	}
-	return (val);
+
+	return (res);
 }
