@@ -24,4 +24,4 @@ typedef struct dlistint_s
     struct dlistint_s *next;
 } dlistint_t;
 
-#endif
+#endif /* LIST_H */
