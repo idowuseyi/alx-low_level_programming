@@ -76,4 +76,10 @@ int add(int, int);
 void print_to_98(int n);
 void print_times_table(int n);
 
-#endif
+int add(int a, int b);
+int sub(int a, int b);
+int mul(int a, int b);
+int mod(int a, int b);
+extern div_t div(int __numer, int __denom);
+
+#endif /* MAIN_H */
